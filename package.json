@@ -1,0 +1,11 @@
+{
+  "name": "ytstream",
+  "version": "1.0.0",
+  "description": "small scale backend of youtube",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "Jayesh Rathi",
+  "license": "ISC"
+}
