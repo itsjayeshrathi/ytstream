@@ -2,10 +2,18 @@
   "name": "ytstream",
   "version": "1.0.0",
   "description": "small scale backend of youtube",
+  "type": "module",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js"
+    "dev": "nodemon src/index.js"
   },
+  "keywords": [
+    "javascript",
+    "backend"
+  ],
   "author": "Jayesh Rathi",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^3.1.3"
+  }
 }
