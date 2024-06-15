@@ -1,24 +1,18 @@
 import mongoose from "mongoose";
 const commentSchema = new mongoose.Schema(
   {
-    video: [
-      {
-        type: mongoose.Types.ObjectId,
-        ref: "Video",
-      },
-    ],
-    commenter: [
-      {
-        type: mongoose.Types.ObjectId,
-        ref: "User",
-      },
-    ],
-    content: [
-      {
-        type: String,
-        maxlength: 300,
-      },
-    ],
+    content: {
+      type: String,
+      required: true,
+    },
+    video: {
+      type: mongoose.Types.ObjectId,
+      ref: "Video",
+    },
+    owner: {
+      type: mongoose.Types.ObjectId,
+      ref: "User",
+    },
   },
   { timestamps: true }
 );
